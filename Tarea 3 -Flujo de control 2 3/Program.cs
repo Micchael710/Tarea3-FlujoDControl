@@ -1,4 +1,4 @@
-﻿namespace Tarea_3__Flujo_de_control_2_3
+namespace Tarea_3__Flujo_de_control_2_3
 {
     internal class Program
     {
@@ -41,20 +41,17 @@
             Console.WriteLine("=== RESULTADOS ===");
             Console.WriteLine();
 
+            Console.WriteLine(string.Format("{0,-25} {1,-8} {2,-8} {3,-8} {4,-8} {5,-10} {6,-10}",
+                "Estudiante", "Nota 1", "Nota 2", "Nota 3", "Nota 4", "Promedio", "Estatus"));
+            Console.WriteLine(new string('-', 80));
+
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine($"Estudiante: {nombres[i]}");
-                Console.WriteLine($"Nota 1:     {notas1[i]}");
-                Console.WriteLine($"Nota 2:     {notas2[i]}");
-                Console.WriteLine($"Nota 3:     {notas3[i]}");
-                Console.WriteLine($"Nota 4:     {notas4[i]}");
-                Console.WriteLine($"Promedio:   {promedios[i]}");
-                Console.WriteLine($"Estatus:    {estatus[i]}");
-                Console.WriteLine();
+                Console.WriteLine(string.Format("{0,-25} {1,-8} {2,-8} {3,-8} {4,-8} {5,-10} {6,-10}",
+                    nombres[i], notas1[i], notas2[i], notas3[i], notas4[i], promedios[i], estatus[i]));
             }
 
             Console.ReadKey();
-
         }
     }
 }
