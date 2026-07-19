@@ -1,11 +1,11 @@
 # Tarea 3 - Flujo de Control 2
 
-**Materia:** Programación Básica  
-**Profesor:** Gamaliel Reyes del Carmen  
+Materia: Programación Básica  
+Profesor: Gamaliel Reyes del Carmen  
 
 ## Descripción
 
-Programa en C# que utiliza bucles para permitir al usuario introducir las 4 calificaciones de N estudiantes, calcular el promedio de cada uno y determinar si Aprobó (promedio ≥ 70) o Reprobó (promedio < 70).
+Utilizando bucles, crea un programa que permita al usuario introducir las 4 calificaciones de n cantidad de estudiantes, calcular el promedio y determinar si aprobó o reprobó, el resultado en pantalla debería ser de esta manera.
 
 ## Cómo funciona
 
@@ -18,8 +18,7 @@ Programa en C# que utiliza bucles para permitir al usuario introducir las 4 cali
 ## Capturas de pantalla
 
 <img width="584" height="657" alt="image" src="https://github.com/user-attachments/assets/5227fcc7-56c4-4b4c-bf39-1c675020eaf0" />
-
-
+<img width="737" height="962" alt="image" src="https://github.com/user-attachments/assets/77116ae9-3da7-4575-8333-ac19bf3acb87" />
 
 ## Link del repositorio
 
