@@ -16,9 +16,8 @@ Utilizando bucles, crea un programa que permita al usuario introducir las 4 cali
 5. Al finalizar, se muestran todos los resultados en pantalla.
 
 ## Capturas de pantalla
-
-<img width="584" height="657" alt="image" src="https://github.com/user-attachments/assets/5227fcc7-56c4-4b4c-bf39-1c675020eaf0" />
-<img width="737" height="962" alt="image" src="https://github.com/user-attachments/assets/77116ae9-3da7-4575-8333-ac19bf3acb87" />
+<img width="1114" height="615" alt="image" src="https://github.com/user-attachments/assets/20b09de8-cff5-4e51-b905-9517321e76cd" />
+<img width="1107" height="613" alt="image" src="https://github.com/user-attachments/assets/eb85d201-ff8c-469e-992e-a716edbf4070" />
 
 ## Link del repositorio
 
