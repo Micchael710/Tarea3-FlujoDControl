@@ -20,14 +20,10 @@ namespace Tarea_3__Flujo_de_control_2_3
                 Console.WriteLine($"--- Estudiante {i + 1} ---");
                 Console.Write("Nombre: ");
                 nombres[i] = Console.ReadLine();
-                Console.Write("Nota 1: ");
-                notas1[i] = double.Parse(Console.ReadLine());
-                Console.Write("Nota 2: ");
-                notas2[i] = double.Parse(Console.ReadLine());
-                Console.Write("Nota 3: ");
-                notas3[i] = double.Parse(Console.ReadLine());
-                Console.Write("Nota 4: ");
-                notas4[i] = double.Parse(Console.ReadLine());
+                notas1[i] = LeerNota("Nota 1: ");
+                notas2[i] = LeerNota("Nota 2: ");
+                notas3[i] = LeerNota("Nota 3: ");
+                notas4[i] = LeerNota("Nota 4: ");
 
                 promedios[i] = (notas1[i] + notas2[i] + notas3[i] + notas4[i]) / 4;
 
@@ -52,6 +48,22 @@ namespace Tarea_3__Flujo_de_control_2_3
             }
 
             Console.ReadKey();
+        }
+
+        static double LeerNota(string mensaje)
+        {
+            double nota;
+            Console.Write(mensaje);
+            nota = double.Parse(Console.ReadLine());
+
+            while (nota < 0 || nota > 100)
+            {
+                Console.WriteLine("Nota inválida. Debe ser entre 0 y 100.");
+                Console.Write(mensaje);
+                nota = double.Parse(Console.ReadLine());
+            }
+
+            return nota;
         }
     }
 }
