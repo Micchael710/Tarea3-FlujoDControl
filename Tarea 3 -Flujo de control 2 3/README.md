@@ -18,6 +18,8 @@ Utilizando bucles, crea un programa que permita al usuario introducir las 4 cali
 ## Capturas de pantalla
 <img width="1114" height="615" alt="image" src="https://github.com/user-attachments/assets/20b09de8-cff5-4e51-b905-9517321e76cd" />
 <img width="1107" height="613" alt="image" src="https://github.com/user-attachments/assets/eb85d201-ff8c-469e-992e-a716edbf4070" />
+<img width="1109" height="616" alt="image" src="https://github.com/user-attachments/assets/791e67c7-e09d-4dfd-b06f-6f6b3622f0d3" />
+
 
 ## Link del repositorio
 
