@@ -11,9 +11,10 @@ Utilizando bucles, crea un programa que permita al usuario introducir las 4 cali
 
 1. El usuario ingresa la cantidad de estudiantes a registrar.
 2. Por cada estudiante se captura: nombre y 4 notas.
-3. El programa calcula el promedio de las 4 notas.
-4. Se determina el estatus (Aprobado / Reprobado) según el promedio.
-5. Al finalizar, se muestran todos los resultados en pantalla.
+3. Las notas deben estar entre 0 y 100, si se ingresa un número negativo o mayor a 100 el programa lo rechaza y vuelve a pedirla.
+4. El programa calcula el promedio de las 4 notas.
+5. Se determina el estatus (Aprobado / Reprobado) según el promedio.
+6. Al finalizar, se muestran todos los resultados en una tabla formateada.
 
 ## Capturas de pantalla
 <img width="1114" height="615" alt="image" src="https://github.com/user-attachments/assets/20b09de8-cff5-4e51-b905-9517321e76cd" />
