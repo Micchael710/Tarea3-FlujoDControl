@@ -9,12 +9,12 @@ Mediante el uso de bucles, desarrolla un programa que permita ingresar las cuatr
 
 ## Cómo funciona
 
-1. El usuario ingresa la cantidad de estudiantes a registrar.
-2. Por cada estudiante se captura: nombre y 4 notas.
-3. Las notas deben estar entre 0 y 100, si se ingresa un número negativo o mayor a 100 el programa lo rechaza y vuelve a pedirla.
-4. El programa calcula el promedio de las 4 notas.
-5. Se determina el estatus (Aprobado / Reprobado) según el promedio.
-6. Al finalizar, se muestran todos los resultados en una tabla formateada.
+1. El usuario indica cuántos estudiantes desea registrar.
+2. Para cada estudiante, se solicita su nombre y sus cuatro calificaciones.
+3. Cada calificación debe encontrarse entre 0 y 100. Si se introduce un valor negativo o superior a 100, el programa lo rechaza y solicita la nota nuevamente.
+4. El programa obtiene el promedio a partir de las cuatro calificaciones.
+5. De acuerdo con el promedio calculado, determina si el estudiante está aprobado o reprobado.
+6. Al terminar el registro, todos los resultados se presentan en una tabla organizada.
 
 ## Capturas de pantalla
 <img width="1114" height="615" alt="image" src="https://github.com/user-attachments/assets/20b09de8-cff5-4e51-b905-9517321e76cd" />
