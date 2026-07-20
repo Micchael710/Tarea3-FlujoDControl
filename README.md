@@ -5,7 +5,7 @@ Profesor: Gamaliel Reyes del Carmen
 
 ## Descripción
 
-Utilizando bucles, crea un programa que permita al usuario introducir las 4 calificaciones de n cantidad de estudiantes, calcular el promedio y determinar si aprobó o reprobó, el resultado en pantalla debería ser de esta manera.
+Mediante el uso de bucles, desarrolla un programa que permita ingresar las cuatro calificaciones de una cantidad determinada de estudiantes, calcular el promedio de cada uno y establecer si aprobó o reprobó. Los resultados deberán mostrarse en pantalla siguiendo el formato indicado.
 
 ## Cómo funciona
 
