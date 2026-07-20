@@ -5,32 +5,35 @@ namespace Tarea_3__Flujo_de_control_2_3
         static void Main(string[] args)
         {
             Console.Write("¿Cuántos estudiantes desea registrar? ");
-            int n = int.Parse(Console.ReadLine());
+            int cantidad = Convert.ToInt32(Console.ReadLine());
 
-            string[] nombres = new string[n];
-            double[] notas1 = new double[n];
-            double[] notas2 = new double[n];
-            double[] notas3 = new double[n];
-            double[] notas4 = new double[n];
-            double[] promedios = new double[n];
-            string[] estatus = new string[n];
+            string[] estudiantes = new string[cantidad];
+            double[][] notas = new double[cantidad][];
+            double[] promedioFinal = new double[cantidad];
+            string[] resultado = new string[cantidad];
 
-            for (int i = 0; i < n; i++)
+            for (int indice = 0; indice < cantidad; indice++)
             {
-                Console.WriteLine($"--- Estudiante {i + 1} ---");
+                Console.WriteLine("--- Estudiante {0} ---", indice + 1);
                 Console.Write("Nombre: ");
-                nombres[i] = Console.ReadLine();
-                notas1[i] = LeerNota("Nota 1: ");
-                notas2[i] = LeerNota("Nota 2: ");
-                notas3[i] = LeerNota("Nota 3: ");
-                notas4[i] = LeerNota("Nota 4: ");
+                estudiantes[indice] = Console.ReadLine();
 
-                promedios[i] = (notas1[i] + notas2[i] + notas3[i] + notas4[i]) / 4;
+                notas[indice] = new double[4];
 
-                if (promedios[i] >= 70)
-                    estatus[i] = "Aprobado";
-                else
-                    estatus[i] = "Reprobado";
+                for (int j = 0; j < 4; j++)
+                {
+                    notas[indice][j] = LeerNota("Nota {0}: ", j + 1);
+                }
+
+                double suma = 0;
+
+                for (int j = 0; j < 4; j++)
+                {
+                    suma += notas[indice][j];
+                }
+
+                promedioFinal[indice] = suma / 4;
+                resultado[indice] = promedioFinal[indice] >= 70 ? "Aprobado" : "Reprobado";
             }
 
             Console.WriteLine();
@@ -41,25 +44,25 @@ namespace Tarea_3__Flujo_de_control_2_3
                 "Estudiante", "Nota 1", "Nota 2", "Nota 3", "Nota 4", "Promedio", "Estatus"));
             Console.WriteLine(new string('-', 80));
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < cantidad; i++)
             {
                 Console.WriteLine(string.Format("{0,-25} {1,-8} {2,-8} {3,-8} {4,-8} {5,-10} {6,-10}",
-                    nombres[i], notas1[i], notas2[i], notas3[i], notas4[i], promedios[i], estatus[i]));
+                    estudiantes[i], notas[i][0], notas[i][1], notas[i][2], notas[i][3], promedioFinal[i], resultado[i]));
             }
 
             Console.ReadKey();
         }
 
-        static double LeerNota(string mensaje)
+        static double LeerNota(string mensaje, int numero)
         {
             double nota;
-            Console.Write(mensaje);
+            Console.Write(string.Format(mensaje, numero));
             nota = double.Parse(Console.ReadLine());
 
             while (nota < 0 || nota > 100)
             {
                 Console.WriteLine("Nota inválida. Debe ser entre 0 y 100.");
-                Console.Write(mensaje);
+                Console.Write(string.Format(mensaje, numero));
                 nota = double.Parse(Console.ReadLine());
             }
 
