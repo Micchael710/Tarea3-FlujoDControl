@@ -21,7 +21,4 @@ Mediante el uso de bucles, desarrolla un programa que permita ingresar las cuatr
 <img width="1107" height="613" alt="image" src="https://github.com/user-attachments/assets/eb85d201-ff8c-469e-992e-a716edbf4070" />
 <img width="1109" height="616" alt="image" src="https://github.com/user-attachments/assets/66425575-f7f6-467d-9b24-14f2f8170ebe" />
 
-
-## Link del repositorio
-
-https://github.com/Micchael710/Tarea3-FlujoDControl
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
